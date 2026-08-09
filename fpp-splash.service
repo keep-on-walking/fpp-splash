@@ -1,0 +1,11 @@
+[Unit]
+Description=FPP idle/paused framebuffer splash (fpp-splash plugin)
+After=fppd.service
+
+[Service]
+ExecStart=@PLUGDIR@/scripts/splashd.sh
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

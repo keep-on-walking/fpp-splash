@@ -1,0 +1,24 @@
+{
+	"repoName": "fpp-splash",
+	"name": "Idle / Paused Splash Screen",
+	"author": "Johnnie (keep-on-walking)",
+	"description": "Shows a configurable splash on the HDMI output whenever no media is playing: centered text or a fullscreen image when idle, and an optional PAUSED frame when a playlist is paused. Writes directly to the framebuffer beneath FPP's video plane, so it appears instantly when playback stops and never conflicts with GStreamer/KMS output. Configurable from the dashboard (Content Setup > Idle Splash). No FPP core modifications required.",
+	"homeURL": "https://github.com/keep-on-walking/fpp-splash",
+	"srcURL": "https://github.com/keep-on-walking/fpp-splash.git",
+	"bugURL": "https://github.com/keep-on-walking/fpp-splash/issues",
+	"allowUpdates": 1,
+	"versions": [
+		{
+			"minFPPVersion": "10.0",
+			"maxFPPVersion": "0",
+			"branch": "main",
+			"sha": ""
+		}
+	],
+	"dependencies": {
+		"packages": ["imagemagick", "ffmpeg"],
+		"python": [],
+		"scripts": [],
+		"plugins": []
+	}
+}
